@@ -1,0 +1,67 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1, h2 {
+    color: #007bff;
+}
+
+/* Stilizacija forme */
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+input[type="text"], input[type="email"], textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #2e2e2e; /* Siva ivica */
+    border-radius: 5px; /* Zaobljene ivice */
+    box-sizing: border-box; /* Uključuje padding i border u ukupnu širinu */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Glatka promena boje ivice i senke */
+}
+
+/* Efekat pri fokusu */
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
+    border-color: #007bff; /* Plava boja ivice pri fokusu */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Plavi sjaj oko input polja */
+    outline: none; /* Uklanja default outline */
+}
+
+/* Stilizacija textarea */
+.form-control {
+    resize: vertical;
+    border: 2px solid #2e2e2e; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    font-size: 16px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
+}
+
+
+button[type="submit"] {
+    background-color: #007bff;
+    
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
